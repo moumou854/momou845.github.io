@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>WebCatX</title>
+	</head>
+    <style type="text/css">
+        body {
+            width: 500px;
+            background-color: #474747;
+        }
+    	ul {
+            list-style-type: none;
+        }
+        li {
+            float: left;
+        }
+        a:link,a:visited {
+            display: block;
+            width: 120px;
+            font-weight: bold;
+            color: #FFFFFF;
+            background-color: #0066FF;
+            text-align: center;
+            padding: 4px;
+            text-decoration: none;
+        }
+        a:hover,a:active {
+            background-color: #FF7300;
+        }
+        #ah {
+            height: 80px;
+            width: 480px;
+            background-color: #2AE58D;
+            border-radius: 5px;
+            padding-top: 5px;
+        }
+        #au {
+            width: 200px;
+            height: 80px;
+            background-color: #098959;
+            text-align: center;
+            display: none;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+        button {
+            width: 100px;
+            border-radius: 5px;
+            border: none;
+            background-color: #41B193;
+        }
+    </style>
+	<body>
+		<div id="ah">
+			<ul>
+             <li><a href="javascript:alert('没做')">主页</a></li>
+             <li><a href="javascript:alert('我也不知道')">联系</a></li>
+             <li><a href="https://baidu.com">关于</a></li>
+            </ul>
+		</div>
+        <button onclick="a()">打开</button>
+         <div id="au">
+            <button onclick="asy()">关闭</button>
+            <p>关上吧</p>
+         </div>
+	</body>
+</html>
+<script>
+    function a() {
+    	document.getElementById('au').style.display = 'block';
+    }
+    
+    function asy() {
+    	document.getElementById('au').style.display = 'none';
+    }
+</script>
